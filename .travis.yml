@@ -27,7 +27,12 @@ matrix:
       sudo: true
       script: bin/test quality
       env:
-
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      script: bin/test quality
+      env:
     - stage: baseline
       python: 3.8
       dist: xenial
@@ -44,6 +49,24 @@ matrix:
       sudo: true
       env:
         - SPLIT="2/2" TEST_SYMPY="true"
+    - arch: arm64  
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_DOCTESTS="true" FASTCACHE="false" TEST_SETUP="true" TEST_EXAMPLES="true"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="1/8" TEST_SYMPY="true"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="2/8" TEST_SYMPY="true"               
     - python: 3.7
       dist: xenial
       # At the time of writing this is Python 3.7 but it will become 3.8 when
@@ -124,7 +147,22 @@ matrix:
       env:
         - TEST_SLOW="true"
         - SPLIT="2/2"
-
+        
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="1/8"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="2/8"
+        
     # Code coverage tests
     - python: 3.6
       dist: xenial
