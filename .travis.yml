@@ -103,25 +103,25 @@ matrix:
       sudo: true
       env:
         - SPLIT="8/12" TEST_SYMPY="true"     
-   - arch: arm64
+    - arch: arm64
       python: 3.8
       dist: xenial
       sudo: true
       env:
         - SPLIT="9/12" TEST_SYMPY="true"    
-   - arch: arm64
+    - arch: arm64
       python: 3.8
       dist: xenial
       sudo: true
       env:
         - SPLIT="10/12" TEST_SYMPY="true"     
-   - arch: arm64
+    - arch: arm64
       python: 3.8
       dist: xenial
       sudo: true
       env:
         - SPLIT="11/12" TEST_SYMPY="true"     
-   - arch: arm64
+    - arch: arm64
       python: 3.8
       dist: xenial
       sudo: true
@@ -291,8 +291,7 @@ matrix:
       sudo: true
       env:
         - TEST_SLOW="true"
-        - SPLIT="12/12"
-        
+        - SPLIT="12/12"    
         
     # Code coverage tests
     - python: 3.6
