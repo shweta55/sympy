@@ -66,7 +66,67 @@ matrix:
       dist: xenial
       sudo: true
       env:
-        - SPLIT="2/8" TEST_SYMPY="true"               
+        - SPLIT="2/12" TEST_SYMPY="true"   
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="3/12" TEST_SYMPY="true" 
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="4/12" TEST_SYMPY="true"     
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="5/12" TEST_SYMPY="true"     
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="6/12" TEST_SYMPY="true"     
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="7/12" TEST_SYMPY="true"     
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="8/12" TEST_SYMPY="true"     
+   - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="9/12" TEST_SYMPY="true"    
+   - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="10/12" TEST_SYMPY="true"     
+   - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="11/12" TEST_SYMPY="true"     
+   - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - SPLIT="12/12" TEST_SYMPY="true"    
     - python: 3.7
       dist: xenial
       # At the time of writing this is Python 3.7 but it will become 3.8 when
@@ -154,14 +214,85 @@ matrix:
       sudo: true
       env:
         - TEST_SLOW="true"
-        - SPLIT="1/8"
+        - SPLIT="1/12"
     - arch: arm64
       python: 3.8
       dist: xenial
       sudo: true
       env:
         - TEST_SLOW="true"
-        - SPLIT="2/8"
+        - SPLIT="2/12"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="3/12"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="4/12"   
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="5/12"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="6/12"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="7/12"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="8/12"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="9/12"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="10/12"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="11/12"
+    - arch: arm64
+      python: 3.8
+      dist: xenial
+      sudo: true
+      env:
+        - TEST_SLOW="true"
+        - SPLIT="12/12"
+        
         
     # Code coverage tests
     - python: 3.6
