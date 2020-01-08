@@ -60,7 +60,7 @@ matrix:
       dist: xenial
       sudo: true
       env:
-        - SPLIT="1/16" TEST_SYMPY="true"
+        - SPLIT="1/12" TEST_SYMPY="true"
     - arch: arm64
       python: 3.8
       dist: xenial
