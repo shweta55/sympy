@@ -513,7 +513,7 @@ install:
 script:
   # Don't run doctr if the build fails
   - set -e
-  - bin/test_travis.sh
+  - travis_wait 30 bin/test_travis.sh
   - if [[ "${TEST_SPHINX}" == "true" ]]; then
         doctr deploy dev --deploy-repo sympy/sympy_doc --command './generate_indexes.py';
     fi
