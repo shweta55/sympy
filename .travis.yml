@@ -269,6 +269,17 @@ matrix:
             - pypy
           packages:
             - pypy3
+    - arch: arm64
+      python: "pypy"
+      env:
+        - TEST_DOCTESTS="true" TEST_EXAMPLES="true"
+        - FASTCACHE="false"
+      addons:
+        apt:
+          sources:
+            - pypy
+          packages:
+            - pypy3
     - python: "pypy"
       env:
         - TEST_SYMPY="true"
@@ -299,6 +310,12 @@ matrix:
       env:
         - TEST_FLAKE8="true"
     - python: 3.6
+      dist: xenial
+      sudo: true
+      env:
+        - BENCHMARK="true"
+    - arch: arm64
+      python: 3.6
       dist: xenial
       sudo: true
       env:
